@@ -134,6 +134,38 @@ header{
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
 }
 
+/* tech stack section */
+.tech{
+    padding: 0px 300px;
+}
+
+.tech-container{
+    max-width: 1400px;
+    width: 100%;
+    font-family: 'Lora', serif;
+    text-align: left;
+}
+
+.tech-title h1{
+    padding: 0px 0px 30px 0px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.tech-text{
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+.tech-text span{
+    font-weight: 700;
+}
+
+.tech-text li{
+    line-height: 1.8;
+    padding: 15px 0px;
+}
+
 /* link back to home */
 .back{
     padding: 100px;
