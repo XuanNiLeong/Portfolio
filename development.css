@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500;1,700&display=swap');
+
+/* header and navigation */
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.navbar-brand{
+    padding-left: 60px; /*logo padding*/
+}
+
+.nav-link{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#navbarSupportedContent{
+    padding: 10px 60px; /*nav text container padding*/
+}
+
+.nav-item{
+    padding: 15px 20px; /*spacing between nav text*/
+}
+
+/* food gallery */
+.gallery {
+    display: flex;
+    padding: 200px 200px 100px 200px;
+    transition: 0.3s;
+}
+.gallery:hover .gallery__image {
+    filter: grayscale(1);
+}
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.gallery__link {
+    margin: 2px;
+    overflow: hidden;
+}
+.gallery__link:hover .gallery__image {
+    filter: grayscale(0);
+}
+.gallery__link:hover .gallery__caption {
+    opacity: 1;
+}
+.gallery__thumb {
+    position: relative;
+}
+.gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+.gallery__image:hover {
+    transform: scale(1.1);
+}
+
+
+/* link back to life */
+.back{
+    padding: 100px;
+}
+
+.back-container{
+    font-family: 'Lora', serif;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-container h1 a{
+    font-size: 0.4em;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.back-container h1 a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.back-container h1 a:hover{
+   text-decoration: none;
+   color: white;
+   border-color: black;
+   background-color: black;
+   font-style: italic;
+}
+
+
+
+
+
+

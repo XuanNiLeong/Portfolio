@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500;1,700&display=swap');
+
+/* header and navigation */
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.navbar-brand{
+    padding-left: 60px; /*logo padding*/
+}
+
+.nav-link{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#navbarSupportedContent{
+    padding: 10px 60px; /*nav text container padding*/
+}
+
+.nav-item{
+    padding: 15px 20px; /*spacing between nav text*/
+}
+
+
+/* gallery section */
+.title h1{
+    margin: auto;
+    text-align: center;
+    padding: 200px 0px 150px 0px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+}
+
+.life {
+    display: flex;
+    -webkit-box-pack: center;
+    padding: 0px 10px 50px;
+}
+  
+.life-container {
+    max-width: 1400px;
+    width: 100%;
+}
+  
+.life-row {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+}
+  
+.life-col {
+    display: flex;
+    width: auto;
+    min-width: 400px;
+    letter-spacing: -0.02em;
+}
+
+.life-image{
+    position: relative;
+    margin: auto;
+}
+  
+.life-image img{
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+    display: block;
+    opacity: 1;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.life-image:hover .overlay {
+    opacity: 1;
+}
+
+.life-image:hover img{
+    opacity: 0.35;
+    transition: 1.5s ease;
+}
+  
+.life-text {
+    font-family: 'Lora', serif;
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+.life-text h2{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.life-text p{
+  font-size: 1em;
+  padding: 20px;
+  line-height: 1.2;
+}
+
+  
+#explorer, #foodie{
+    position: relative;
+    top: -60px;
+}
+
+
+/* link back to home */
+.back{
+    padding: 100px;
+}
+
+.back-container{
+    font-family: 'Lora', serif;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-container h1 a{
+    font-size: 0.4em;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.back-container h1 a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.back-container h1 a:hover{
+   text-decoration: none;
+   color: white;
+   border-color: black;
+   background-color: black;
+   font-style: italic;
+}

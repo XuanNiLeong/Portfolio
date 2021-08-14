@@ -1,0 +1,376 @@
+/* 
+Theme Name: PersonalWebsite
+Text Domain: PersonalWebsite
+Version: 1.0
+Author: Xuan Leong
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500;1,700&display=swap');
+
+/* header and navigation */
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.navbar-brand{
+    padding-left: 60px; /*logo padding*/
+}
+
+.nav-link{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#navbarSupportedContent{
+    padding: 10px 60px; /*nav text container padding*/
+}
+
+.nav-item{
+    padding: 15px 20px; /*spacing between nav text*/
+}
+
+/* hero section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-container{
+    padding-top: 250px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+}
+
+.hero-container img{
+    font-size: 3.2em;
+    line-height: 1.3;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+/* scroll icon  */
+.icon-scroll {
+    width: 30px;
+    height: 45px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    box-shadow: 3px 3px 5px -5px #000;
+    margin-top: 80px;
+  }
+
+  .icon-scroll::before {
+    content: "";
+    width: 3px;
+    height: 30px;
+    background: #eee;
+    border-radius: 2px;
+    margin-top: 5px;
+  }
+
+  .icon-scroll::after {
+    content: "";
+    width: 3px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    display: block;
+    animation: scroll ease 2s infinite;
+  }
+
+  @keyframes scroll {
+    from {
+      top: 5px;
+    }
+    to {
+      top: 30px;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* gallery section */
+.gallery {
+  display: flex;
+  -webkit-box-pack: center;
+  padding: 30px 10px;
+}
+
+.gallery-container {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.gallery-row {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.gallery-col {
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  min-width: 600px;
+  letter-spacing: -0.02em;
+}
+
+.gallery-image{
+  padding: 15px;
+}
+
+.gallery-image img{
+  display: flex;
+  object-fit: cover;
+  width: 350px;
+  height: 550px;
+}
+
+#pic1, #pic3{
+  position: relative;
+  top: -60px;
+}
+
+/* introduction section */
+.intro{
+  padding: 100px 10px;
+}
+
+.intro-container {
+  padding: 50px 120px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.intro-row {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.intro-col {
+  font-family: 'Lora', serif;
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  min-width: 700px;
+}
+
+.intro-text{
+  text-align: justify;
+}
+
+.intro-text h1{
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.intro-text p{
+  font-size: 1.2em;
+  padding: 30px 0px;
+}
+
+/* animation on scroll section */
+.intro-animation{
+  padding: 0px 350px;
+}
+
+.intro-animation-image{
+  object-fit: contain;
+  width: 180px;
+  height: 160px;
+}
+
+/* profile section */
+.profile {
+  margin: auto;
+  align-items: center;
+  justify-content: center;  
+  display: flex;
+  -webkit-box-pack: center;
+  padding: 50px 100px;
+}
+
+.profile-container {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.profile-row {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.profile-col {
+  display: flex;
+  margin: auto;
+  font-family: 'Lora', serif;
+}
+
+.work-container{
+  background-image: url('/images/work.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;  
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.work-container:hover{
+  transform: scale(1.015);
+}
+
+.work-container h2{
+  font-size: 3em;
+  font-style: italic;
+  position: absolute;
+  bottom: 0; 
+  padding: 20px 30px;
+}
+
+.work-container p{
+  font-size: 1.2em;
+  padding-top: 40px;
+}
+
+.life-container{
+  background-image: url('/images/life.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+  top: 250px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.life-container:hover{
+  transform: scale(1.015);
+}
+
+.life-container h2{
+  font-size: 3em;
+  font-style: italic;
+  position: absolute;
+  top: 0; 
+  padding: 20px 30px;
+}
+
+.life-container p{
+  font-size: 1.2em;
+  padding-top: 40px;
+}
+
+/* contact us section */
+.contact{
+  padding: 350px 100px;
+  padding-bottom: 100px;
+}
+
+.contact-container {
+  padding: 50px 120px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.contact-row {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.contact-col {
+  font-family: 'Lora', serif;
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  min-width: 700px;
+}
+
+.contact-text{
+  text-align: justify;
+}
+
+.contact-text h1{
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.contact-text p{
+  font-size: 1.2em;
+  padding: 30px 0px;
+}
+
+/* animation on scroll section */
+.contact-animation{
+  padding: 0px;
+}
+
+.contact-animation-image{
+  object-fit: contain;
+  width: 180px;
+  height: 160px;
+}
+
+/* icon  section */
+.icon{
+  display: block;
+}
+
+.icon img{
+  margin: 0px 10px;
+  width: 45px;
+  height: 45px;
+}

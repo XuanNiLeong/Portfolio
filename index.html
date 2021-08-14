@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>XuanNi</title>
+        <!-- Meta  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Responsive Website -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+        <link rel= "stylesheet" href= "style.css">
+        <!-- Fade In Animation -->
+        <link rel="stylesheet" href="aos-by-red.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+    <body>
+        <header> 
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="/index.html"><img src="/images/logo.png" alt="logo" width="200px" height="70px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-lg-auto ">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/life.html">Life</a>
+                </li> 
+              </ul>
+            </div>
+        </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+              <div class="hero-container" width="normal">
+                <div class="hero-row">
+                  <div class="hero-col" width="aut0">
+                    <div class="hero-image">
+                      <img src="/images/x.png">
+                    </div>
+                  </div>
+                  <div class="hero-col" width="aut0">
+                    <div class='icon-scroll'></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="gallery">
+              <div class="gallery-container" width="normal">
+                <div class="gallery-row">
+                  <div class="gallery-col" width="aut0">
+                    <div class="gallery-image" id="pic1">
+                      <img src="/images/pic1.jpg">
+                    </div>
+                    <div class="gallery-image" id="pic2">
+                      <img src="/images/pic2.jpg">
+                    </div>
+                    <div class="gallery-image" id="pic3">
+                      <img src="/images/pic3.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="intro">
+              <div class="intro-container" width="normal">
+                <div class="intro-row">
+
+                  <div class="intro-col" width="auto">
+                    <div class="intro-text">
+                      <h1>Tech Explorer</h1>
+                      <p>Jessie has 3 years of experience as a Data Scientist, Data Analyst and Product Management in projects across different industries in her career and internships. An enthusiast in leveraging big data to unlock business insights, she focuses on mining and analysing vast datasets in discovering interesting findings for better operations of the organisation, collaborating across different functional teams and producing scalable techni</p>
+                    </div> 
+                  </div>
+
+                  <div class="intro-col" width="auto">
+                    <div class="intro-animation" data-aos="fade-right" >
+                      <img class="intro-animation-image" src="/images/x.png" alt="logo"/>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <section class="profile">
+              <div class="profile-container" width="normal">
+
+                <div class="profile-row">
+
+                  <div class="profile-col" width="auto">
+                    <a href="/projects.html">
+                      <div class="work" data-aos="fade-up">
+                        <div class="work-container">
+                          <h2>Professionally</h2>
+                        </div>
+                      </div> 
+                    </a>
+                  </div>
+
+                  <div class="profile-col" width="auto">
+                    <a href="/life.html">
+                      <div class="life" data-aos="fade-down" data-aos-delay="1500">
+                        <div class="life-container" href="/life.html">
+                          <h2>Life</h2>
+                        </div>
+                      </div> 
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <section class="contact">
+              <div class="contact-container" width="normal">
+                <div class="contact-row">
+
+                  <div class="contact-col" width="auto">
+                    <div class="contact-text">
+                      <h1>Let's Connect</h1>
+                      <p>talk to me hellooooo </p>
+                      <div class="icon">
+                        <a href="https://www.linkedin.com/in/xuannileong/">                        
+                          <img src="/images/linkedin.png" alt="linkedin"/>
+                        </a>
+                        <a href="https://github.com/">
+                          <img src="/images/github.png" alt="github"/>
+
+                        </a>
+                      </div>
+                    </div> 
+                  </div>
+
+                  <div class="contact-col" width="auto">
+                    <div class="contact-animation" data-aos="zoom-in-left" >
+                      <img class="contact-animation-image" src="/images/x.png" alt="logo"/>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+        </main>
+
+      <!-- Animation On Scroll -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 3000,
+          once: false,
+        });
+      </script>
+
+      <script src="main.js"></script> 
+
+      <!-- Navigation -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
