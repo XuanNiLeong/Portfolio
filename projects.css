@@ -76,6 +76,11 @@ header{
     font-style: italic;
 }
 
+a, a:link, a:visited, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
 /* link back to home */
 .back{
     padding: 100px;

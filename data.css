@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500;1,700&display=swap');
+
+/* header and navigation */
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.navbar-brand{
+    padding-left: 60px; /*logo padding*/
+}
+
+.nav-link{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#navbarSupportedContent{
+    padding: 10px 60px; /*nav text container padding*/
+}
+
+.nav-item{
+    padding: 15px 20px; /*spacing between nav text*/
+}
+
+/* title section */
+.title h1{
+    margin: auto;
+    margin-bottom: -120px;
+    text-align: center;
+    padding: 200px 0px 0px 0px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+}
+
+/* description section */
+.description{
+    padding: 180px 50px 10px;
+}
+
+.description-container{
+    padding: 50px;
+    max-width: 1400px;
+    width: 100%;
+}
+  
+.description-row{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    flex-direction: row;
+}
+  
+.description-col{
+    font-family: 'Lora', serif;
+    display: block;
+    min-width: 500px;
+    padding: 30px;
+}
+  
+.description-text{
+    max-width: 400px;
+    font-size: 1em;
+    text-align: left;
+}
+
+.description-text span{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.line{
+    margin-left: 140px;
+    margin-right: 140px;
+    width: 1000px;
+    height: 0px;
+    border-bottom: 2px solid #bbb;
+    position: absolute;
+}
+
+/* insights section */
+.insights{
+    padding: 80px 300px;
+}
+
+.insights-container{
+    max-width: 1400px;
+    width: 100%;
+    font-family: 'Lora', serif;
+    text-align: left;
+}
+
+.insights-title h1{
+    padding: 0px 0px 30px 0px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.insights-text-1{
+    font-size: 1em;
+    padding-bottom: 80px;
+}
+
+.insights-text-2{
+    font-size: 1em;
+}
+
+.insights-image{
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.insights-image img{
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 80px;
+    width: 600px;
+    height: 350px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
+}
+
+/* link back to home */
+.back{
+    padding: 100px;
+}
+
+.back-container{
+    font-family: 'Lora', serif;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-container h1 a{
+    font-size: 0.4em;
+    color: black;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.back-container h1 a:link{
+    color: black;
+    text-decoration: none;
+}
+
+.back-container h1 a:hover{
+   text-decoration: none;
+   color: white;
+   border-color: black;
+   background-color: black;
+   font-style: italic;
+}
