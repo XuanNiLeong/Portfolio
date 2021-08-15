@@ -19,6 +19,11 @@ header{
     padding-left: 60px; /*logo padding*/
 }
 
+.navbar-brand img{
+  width: 200px; 
+  height: 70px;
+}
+
 .nav-link{
     font-family: 'Lora', serif;
     font-weight: 700;
@@ -51,116 +56,93 @@ header{
 }
 
 .hero-container img{
-    font-size: 3.2em;
-    line-height: 1.3;
-    font-weight: 800;
     margin: 0;
     padding: 0;
     padding-bottom: 30px;
-    width: 100%;
+    width: 80%;
 }
-
-/* scroll icon  */
-.icon-scroll {
-    width: 30px;
-    height: 45px;
-    background: white;
-    border: 2px solid black;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    position: relative;
-    box-shadow: 3px 3px 5px -5px #000;
-    margin-top: 80px;
-  }
-
-  .icon-scroll::before {
-    content: "";
-    width: 3px;
-    height: 30px;
-    background: #eee;
-    border-radius: 2px;
-    margin-top: 5px;
-  }
-
-  .icon-scroll::after {
-    content: "";
-    width: 3px;
-    height: 5px;
-    background-color: black;
-    position: absolute;
-    display: block;
-    animation: scroll ease 2s infinite;
-  }
-
-  @keyframes scroll {
-    from {
-      top: 5px;
-    }
-    to {
-      top: 30px;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
 /* gallery section */
 .gallery {
-  display: flex;
-  -webkit-box-pack: center;
-  padding: 30px 10px;
+  margin: auto;
+  padding-top: 71px;
+  max-width: 31%;
 }
 
 .gallery-container {
-  max-width: 1400px;
-  width: 100%;
-}
-
-.gallery-row {
-  margin: auto;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: auto;
   width: 100%;
   display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  flex-direction: row;
 }
 
-.gallery-col {
+.icon-scroll {
+  width: 28px;
+  height: 43px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
   display: flex;
-  align-items: flex-start;
-  width: auto;
-  min-width: 600px;
-  letter-spacing: -0.02em;
-}
-
-.gallery-image{
-  padding: 15px;
-}
-
-.gallery-image img{
-  display: flex;
-  object-fit: cover;
-  width: 350px;
-  height: 550px;
-}
-
-#pic1, #pic3{
+  justify-content: center;
+  margin: auto;
   position: relative;
-  top: -60px;
+  box-shadow: 3px 3px 5px -5px #000;
+  margin-bottom: 50px;
+}
+
+.icon-scroll::before {
+  content: "";
+  width: 3px;
+  height: 30px;
+  background: #eee;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.icon-scroll::after {
+  content: "";
+  width: 3px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  display: block;
+  animation: scroll ease 2s infinite;
+}
+
+@keyframes scroll {
+  from {
+    top: 5px;
+  }
+  to {
+    top: 30px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.gallery-container img {
+  object-fit: cover;
+  padding: 8px;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+#pic2{
+  position: relative;
+  top: 40px;
 }
 
 /* introduction section */
 .intro{
-  padding: 100px 10px;
+  margin: auto;
+  max-width: 1100px;
+  padding: 220px 50px 220px 100px;
 }
 
 .intro-container {
-  padding: 50px 120px;
-  max-width: 1400px;
   width: 100%;
 }
 
@@ -177,11 +159,13 @@ header{
   display: flex;
   align-items: flex-start;
   width: auto;
-  min-width: 700px;
+  min-width: 300px;
 }
 
 .intro-text{
+  padding-left: 35px;
   text-align: justify;
+  width: 95%;
 }
 
 .intro-text h1{
@@ -190,13 +174,8 @@ header{
 }
 
 .intro-text p{
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 30px 0px;
-}
-
-/* animation on scroll section */
-.intro-animation{
-  padding: 0px 350px;
 }
 
 .intro-animation-image{
@@ -212,14 +191,14 @@ header{
   justify-content: center;  
   display: flex;
   -webkit-box-pack: center;
-  padding: 50px 100px;
+  padding: 0px 50px;
 }
 
 .profile-container {
   margin: auto;
   align-items: center;
   justify-content: center;
-  max-width: 1400px;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -244,8 +223,8 @@ header{
   background-repeat: no-repeat;
   box-sizing: border-box;
   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 350px;
   border-radius: 10px;
   margin: auto;
   align-items: center;
@@ -262,16 +241,11 @@ header{
 }
 
 .work-container h2{
-  font-size: 3em;
+  font-size: 2.5em;
   font-style: italic;
   position: absolute;
   bottom: 0; 
   padding: 20px 30px;
-}
-
-.work-container p{
-  font-size: 1.2em;
-  padding-top: 40px;
 }
 
 .life-container{
@@ -281,11 +255,11 @@ header{
   background-repeat: no-repeat;
   box-sizing: border-box;
   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 350px;
   border-radius: 10px;
   position: relative;
-  top: 250px;
+  top: 150px;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -300,27 +274,23 @@ header{
 }
 
 .life-container h2{
-  font-size: 3em;
+  font-size: 2.5em;
   font-style: italic;
   position: absolute;
   top: 0; 
   padding: 20px 30px;
 }
 
-.life-container p{
-  font-size: 1.2em;
-  padding-top: 40px;
-}
-
 /* contact us section */
 .contact{
-  padding: 350px 100px;
+  margin: auto;
+  padding-top: 350px;
   padding-bottom: 100px;
+  max-width: 1000px;
 }
 
 .contact-container {
-  padding: 50px 120px;
-  max-width: 1400px;
+  padding: 0px 120px;
   width: 100%;
 }
 
@@ -336,8 +306,9 @@ header{
   display: flex;
   align-items: flex-start;
   width: auto;
-  min-width: 700px;
+  min-width: 350px;
 }
+
 
 .contact-text{
   text-align: justify;
@@ -355,13 +326,13 @@ header{
 
 /* animation on scroll section */
 .contact-animation{
-  padding: 0px;
+  padding-left: 130px;
 }
 
 .contact-animation-image{
   object-fit: contain;
-  width: 180px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
 }
 
 /* icon  section */
@@ -373,4 +344,324 @@ header{
   margin: 0px 10px;
   width: 45px;
   height: 45px;
+}
+
+/* tablet screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+
+@media screen and (max-width: 950px) {
+  /* header and navigation */
+  .navbar-brand{
+    padding-left: 15px; /*logo padding*/
+  }
+
+  .navbar-brand img{
+    width: 150px; 
+    height: 50px;
+  }
+
+  /* hero section */
+  .hero-container{
+    padding-top: 200px;
+  }
+
+  .hero-container img{
+    width: 50%;
+  }
+
+  /* gallery section */
+  .gallery {
+    margin: auto;
+    padding-top: 50px;
+    max-width: 32%;
+  }
+
+  .icon-scroll {
+    width: 25px;
+    height: 38px;
+    margin-bottom: 40px;
+  }
+  
+  .icon-scroll::before {
+    width: 3px;
+    height: 25px;
+  }
+  
+  .icon-scroll::after {
+    width: 3px;
+    height: 5px;
+  }
+  
+  @keyframes scroll {
+    from {
+      top: 5px;
+    }
+    to {
+      top: 25px;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .gallery-container img {
+    padding: 5px;
+  }
+  
+  #pic2{
+    position: relative;
+    top: 30px;
+  }
+
+  /* introduction section */
+  .intro{
+    max-width: 680px;
+    padding: 160px 50px;
+  }
+
+  .intro-row {
+    flex-direction: column;
+  }
+
+  .intro-col{
+    min-width: 200px;
+  }
+
+  .intro-text h1{
+    font-size: 2.5em;
+  }
+
+  .intro-text p{
+    font-size: 0.9em;
+  }
+
+  .intro-animation-image{
+    padding-top: 60px;
+  }
+
+  /* profile section */
+  .profile {
+    padding: 50px;
+  }
+
+  .profile-row {
+    display: block;
+  }
+
+  .profile-col {
+    display: block;
+  }
+
+  .work-container, .life-container{
+    height: 400px;
+    width: 350px;
+  }
+
+  .life-container h2{
+    top: 75%;
+  }
+
+  /* contact us section */
+  .contact{
+    margin: auto;
+    padding-top: 280px;
+    padding-bottom: 100px;
+    max-width: 650px;
+  }
+
+  .contact-container {
+    padding: 0px 60px;
+  }
+
+  .contact-col {
+    min-width: 150px;
+  }
+
+  .contact-text h1{
+    font-size: 2em;
+  }
+
+  .contact-text p{
+    font-size: 1em;
+  }
+
+  /* animation on scroll section */
+  .contact-animation{
+    padding-left: 40px;
+  }
+
+  .contact-animation-image{
+    width: 150px;
+    height: 100px;
+  }
+}
+
+/* mobile screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+
+@media screen and (max-width: 500px) {
+
+  /* header and navigation */
+  .navbar-brand img{
+    width: 120px; 
+    height: 45px;
+  }
+
+  /* hero section */
+  .hero-container{
+    padding-top: 160px;
+  }
+
+  .hero-container img{
+    width: 35%;
+  }
+
+  /* gallery section */
+  .gallery {
+    padding-top: 30px;
+    max-width: 31%;
+  }
+
+  .icon-scroll {
+    width: 20px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .icon-scroll::before {
+    width: 3px;
+    height: 15px;
+  }
+  
+  .icon-scroll::after {
+    width: 3px;
+    height: 5px;
+  }
+  
+  @keyframes scroll {
+    from {
+      top: 5px;
+    }
+    to {
+      top: 15px;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .gallery-container img {
+    padding: 4px;
+  }
+  
+  #pic2{
+    position: relative;
+    top: 20px;
+  }
+
+  /* introduction section */
+  .intro{
+    padding: 110px 20px;
+  }
+
+  .intro-col {
+    min-width: 0px;
+  }
+
+  .intro-text {
+    line-height: 1.4;
+  }
+
+  .intro-text h1{
+    font-size: 1.8em;
+  }
+
+  .intro-text p{
+    font-size: 0.75em;
+  }
+
+  .intro-animation-image{
+    padding-top: 40px;
+    width: 130px;
+    height: 120px;
+  }
+
+  /* profile section */
+  .profile {
+    padding: 30px;
+  }
+
+  .profile-row {
+    display: block;
+  }
+
+  .profile-col {
+    display: block;
+  }
+
+  .work-container, .life-container{
+    height: 250px;
+    width: 240px;
+  }
+
+  .work-container h2{
+    font-size: 1.6em;
+    top: 75%;
+  }
+
+  .life-container h2{
+    font-size: 1.5em;
+    top: 75%;
+  }
+
+  /* contact us section */
+  .contact{
+    margin: auto;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    max-width: 650px;
+  }
+
+  .contact-container {
+    padding: 0px 60px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .contact-col {
+    min-width: 100px;
+  }
+
+  .contact-text h1{
+    font-size: 1.8em;
+  }
+
+  .contact-text p{
+    padding: 10px 0px;
+    font-size: 0.9em;
+  }
+
+  /* animation on scroll section */
+  .contact-animation{
+    padding-left: 0px;
+    padding-top: 80px;
+  }
+
+  .contact-animation-image{
+    width: 100px;
+    height: 50px;
+  }
+
+  /* icon  section */
+  .icon img{
+    margin: 0px 5px;
+    width: 35px;
+    height: 35px;
+  }
 }

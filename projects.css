@@ -12,6 +12,11 @@ header{
     padding-left: 60px; /*logo padding*/
 }
 
+.navbar-brand img{
+  width: 200px; 
+  height: 70px;
+}
+
 .nav-link{
     font-family: 'Lora', serif;
     font-weight: 700;
@@ -25,7 +30,6 @@ header{
 .nav-item{
     padding: 15px 20px; /*spacing between nav text*/
 }
-
 
 /* gallery section */
 .title h1{

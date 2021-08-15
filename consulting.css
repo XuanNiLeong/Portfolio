@@ -12,6 +12,11 @@ header{
     padding-left: 60px; /*logo padding*/
 }
 
+.navbar-brand img{
+  width: 200px; 
+  height: 70px;
+}
+
 .nav-link{
     font-family: 'Lora', serif;
     font-weight: 700;

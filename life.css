@@ -12,6 +12,11 @@ header{
     padding-left: 60px; /*logo padding*/
 }
 
+.navbar-brand img{
+  width: 200px; 
+  height: 70px;
+}
+
 .nav-link{
     font-family: 'Lora', serif;
     font-weight: 700;
@@ -25,7 +30,6 @@ header{
 .nav-item{
     padding: 15px 20px; /*spacing between nav text*/
 }
-
 
 /* gallery section */
 .title h1{
@@ -99,7 +103,7 @@ header{
 }
 
 .life-image:hover img{
-    opacity: 0.35;
+    opacity: 0.30;
     transition: 1.5s ease;
 }
   
@@ -107,12 +111,14 @@ header{
     font-family: 'Lora', serif;
     color: black;
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 90%;
 }
 
@@ -132,7 +138,6 @@ header{
     position: relative;
     top: -60px;
 }
-
 
 /* link back to home */
 .back{
