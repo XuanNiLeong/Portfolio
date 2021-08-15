@@ -46,13 +46,16 @@ header{
 
 /* description section */
 .description{
-    padding: 180px 50px 10px;
+    margin: auto;
+    padding: 230px 50px 10px;
 }
 
 .description-container{
-    padding: 50px;
-    max-width: 1400px;
+    max-width: 950px;
     width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
   
 .description-row{
@@ -62,22 +65,22 @@ header{
     width: 100%;
     display: flex;
     -webkit-box-align: center;
-    flex-direction: row;
 }
   
 .description-col{
     font-family: 'Lora', serif;
-    display: block;
-    min-width: 500px;
-    padding: 30px;
 }
 
 .description-image{
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
 }
+
+.description-image img{
+    object-fit: cover;
+}
   
 .description-text{
-    max-width: 400px;
+    padding-left: 50px;
     font-size: 1em;
     text-align: left;
 }
@@ -85,24 +88,30 @@ header{
 .description-text span{
     font-style: italic;
     font-weight: 600;
+    font-size: 0.9em;
 }
 
 .line{
-    margin-left: 140px;
-    margin-right: 140px;
-    width: 1000px;
-    height: 0px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80px;
     border-bottom: 2px solid #bbb;
-    position: absolute;
 }
 
 /* insights section */
 .insights{
-    padding: 80px 300px;
+    margin: auto;
+    padding: 80px 100px;
 }
 
 .insights-container{
-    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
     width: 100%;
     font-family: 'Lora', serif;
     text-align: left;
@@ -114,13 +123,9 @@ header{
     font-weight: 600;
 }
 
-.insights-text-1{
+.insights-text-1, .insights-text-2{
     font-size: 1em;
-    padding-bottom: 80px;
-}
-
-.insights-text-2{
-    font-size: 1em;
+    padding-bottom: 30px;
 }
 
 .insights-image{
@@ -133,7 +138,7 @@ header{
     display: block;
     border: 1px solid black;
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     width: 600px;
     height: 350px;
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
@@ -141,11 +146,16 @@ header{
 
 /* tech stack section */
 .tech{
-    padding: 0px 300px;
+    margin: auto;
+    padding: 50px 100px;
 }
 
 .tech-container{
-    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
     width: 100%;
     font-family: 'Lora', serif;
     text-align: left;
@@ -205,4 +215,166 @@ header{
    border-color: black;
    background-color: black;
    font-style: italic;
+}
+
+/* tablet screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+@media screen and (max-width: 950px) {
+    /* header and navigation */
+    .navbar-brand{
+      padding-left: 15px; /*logo padding*/
+    }
+  
+    .navbar-brand img{
+      width: 150px; 
+      height: 50px;
+    }
+
+    /* title section */
+    .title h1{
+        max-width: 350px;
+    }
+
+    /* description section */
+    .description{
+        margin: auto;
+        padding: 230px 50px 10px;
+    }
+    
+    .description-container{
+        max-width: 550px;
+    }
+      
+    .description-row{
+        display: block;
+    }
+
+    .description-image img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    } 
+      
+    .description-text{
+        padding-left: 0px;
+        padding-top: 60px;
+        font-size: 1em;
+        text-align: left;
+    }
+    
+    .description-text span{
+        font-style: italic;
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+
+    /* insights section */
+    .insights{
+        padding: 80px 50px;
+    }
+
+    .insights-container{
+        max-width: 550px;
+    }
+
+    .insights-text-1, .insights-text-2{
+        padding-bottom: 20px;
+    }
+
+    .insights-image{
+        padding: 10px 0px;
+    }
+    
+    .insights-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .tech{        
+        padding: 50px 50px;
+    }
+    
+    .tech-container{
+        max-width: 550px;
+    }
+    
+    .tech-text li{
+        line-height: 1.5;
+        padding: 15px 0px;
+    }
+
+}
+  
+/* mobile screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+  
+@media screen and (max-width: 500px) {
+    /* header and navigation */
+    .navbar-brand img{
+      width: 120px; 
+      height: 45px;
+    }
+
+    /* title section */
+    .title h1{
+        padding: 150px 0px 0px 0px;
+        font-size: 1.2em;
+        max-width: 180px;
+    }
+
+    /* description section */
+    .description{
+        margin: auto;
+        padding: 180px 30px 10px;
+    }
+      
+    .description-text{
+        padding-left: 0px;
+        padding-top: 40px;
+        font-size: 0.85em;
+        text-align: left;
+    }
+    
+    .description-text span{
+        font-style: italic;
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+
+    /* insights section */
+    .insights{
+        padding: 30px;
+    }
+
+    .insights-container{
+        max-width: 600px;
+    }
+
+    .insights-text-1, .insights-text-2{
+        font-size: 0.85em;
+        padding-bottom: 0px;
+    }
+
+    .tech{        
+        padding: 30px;
+        padding-top: 60px;
+    }
+    
+    .tech-container{
+        max-width: 600px;
+    }
+
+    .tech-text{
+        font-size: 0.85em;
+    }
+
+    /* back to life link */
+    .back-container h1 a{
+        font-size: 0.23em;
+        padding: 5px;
+    }
 }
