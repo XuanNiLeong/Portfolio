@@ -34,39 +34,46 @@ header{
 /* food gallery */
 .gallery {
     display: flex;
-    padding: 200px 200px 100px 200px;
+    padding: 200px 150px 100px 150px;
     transition: 0.3s;
 }
+
 .gallery:hover .gallery__image {
     filter: grayscale(1);
 }
+
 .gallery__column {
     display: flex;
     flex-direction: column;
     width: 25%;
 }
+
 .gallery__link {
     margin: 2px;
     overflow: hidden;
 }
+
 .gallery__link:hover .gallery__image {
     filter: grayscale(0);
 }
+
 .gallery__link:hover .gallery__caption {
     opacity: 1;
 }
+
 .gallery__thumb {
     position: relative;
 }
+
 .gallery__image {
     display: block;
     width: 100%;
     transition: 0.3s;
 }
+
 .gallery__image:hover {
     transform: scale(1.1);
 }
-
 
 /* link back to life */
 .back{
@@ -102,6 +109,53 @@ header{
    border-color: black;
    background-color: black;
    font-style: italic;
+}
+
+/* tablet screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+@media screen and (max-width: 950px) {
+    /* header and navigation */
+    .navbar-brand{
+      padding-left: 15px; /*logo padding*/
+    }
+  
+    .navbar-brand img{
+      width: 150px; 
+      height: 50px;
+    }
+
+    /* gallery section */
+    .gallery {
+        display: flex;
+        padding: 180px 50px 30px 50px;
+        transition: 0.3s;
+    }
+}
+  
+/* mobile screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+  
+@media screen and (max-width: 500px) {
+    /* header and navigation */
+    .navbar-brand img{
+      width: 120px; 
+      height: 45px;
+    }
+
+    /* gallery section */
+    .gallery {
+        padding: 150px 30px 0px 30px;
+    }
+
+    /* back to life link */
+    .back-container h1 a{
+        font-size: 0.3em;
+        padding: 5px;
+    }
 }
 
 

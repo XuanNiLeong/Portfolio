@@ -35,7 +35,7 @@ header{
 .title h1{
     margin: auto;
     text-align: center;
-    padding: 200px 0px 150px 0px;
+    padding: 200px 0px 80px 0px;
     font-family: 'Lora', serif;
     font-style: italic;
     font-size: 1.5em;
@@ -44,13 +44,15 @@ header{
 }
 
 .life {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    -webkit-box-pack: center;
     padding: 0px 10px 50px;
 }
   
 .life-container {
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
 }
   
@@ -60,6 +62,7 @@ header{
     justify-content: center;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-align: center;
     align-items: center;
     flex-direction: row;
@@ -67,6 +70,9 @@ header{
   
 .life-col {
     display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     width: auto;
     min-width: 400px;
     letter-spacing: -0.02em;
@@ -103,7 +109,7 @@ header{
 }
 
 .life-image:hover img{
-    opacity: 0.30;
+    opacity: 0.35;
     transition: 1.5s ease;
 }
   
@@ -111,20 +117,18 @@ header{
     font-family: 'Lora', serif;
     color: black;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    justify-content: center;
-    align-items: center;
     width: 90%;
 }
 
 .life-text h2{
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: 1.6em;
+    font-weight: 700;
 }
 
 .life-text p{
@@ -132,11 +136,10 @@ header{
   padding: 20px;
   line-height: 1.2;
 }
-
   
-#explorer, #foodie{
-    position: relative;
-    top: -60px;
+#explorer, #foodie, #development{ 
+    padding-top: 100px;
+    min-width: 500px;
 }
 
 /* link back to home */
@@ -173,4 +176,59 @@ header{
    border-color: black;
    background-color: black;
    font-style: italic;
+}
+
+/* tablet screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+@media screen and (max-width: 950px) {
+    /* header and navigation */
+    .navbar-brand{
+      padding-left: 15px; /*logo padding*/
+    }
+  
+    .navbar-brand img{
+      width: 150px; 
+      height: 50px;
+    }
+}
+  
+/* mobile screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+  
+@media screen and (max-width: 500px) {
+    /* header and navigation */
+    .navbar-brand img{
+      width: 120px; 
+      height: 45px;
+    }
+
+    /* title */
+    .title h1{
+        padding: 180px 0px 50px;
+        font-size: 1.3em;
+    }
+
+    /* project section */
+    .life-image img{
+        width: 250px;
+        height: 280px;
+    }
+
+    .life-text h2{
+        font-size: 1.3em;
+    }
+    
+    .life-text p{
+      font-size: 0.8em;
+    }
+
+    /* back to life link */
+    .back-container h1 a{
+        font-size: 0.29em;
+        padding: 5px;
+    }
 }

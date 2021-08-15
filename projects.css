@@ -35,7 +35,7 @@ header{
 .title h1{
     margin: auto;
     text-align: center;
-    padding: 200px 0px 150px 0px;
+    padding: 200px 0px 80px 0px;
     font-family: 'Lora', serif;
     font-style: italic;
     font-size: 1.5em;
@@ -44,23 +44,25 @@ header{
 }
 
 .project {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    -webkit-box-pack: center;
     padding: 0px 10px 50px;
 }
   
 .project-container {
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
 }
   
 .project-row {
     margin: auto;
-    /* padding-top: 180px; */
     align-items: center;
     justify-content: center;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-align: center;
     align-items: center;
     flex-direction: row;
@@ -68,6 +70,9 @@ header{
   
 .project-col {
     display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
     width: auto;
     min-width: 400px;
     letter-spacing: -0.02em;
@@ -125,17 +130,11 @@ header{
     font-size: 1.6em;
     font-weight: 700;
 }
-  
-#data, #software{
-    position: relative;
-    top: -60px;
-}
 
-#whacked, #portfolio{
+#data, #software, #consulting, #whacked, #portfolio{
     padding-top: 100px;
     min-width: 500px;
 }
-
 
 /* link back to home */
 .back{
@@ -171,4 +170,51 @@ header{
    border-color: black;
    background-color: black;
    font-style: italic;
+}
+
+/* tablet screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+@media screen and (max-width: 950px) {
+    /* header and navigation */
+    .navbar-brand{
+      padding-left: 15px; /*logo padding*/
+    }
+  
+    .navbar-brand img{
+      width: 150px; 
+      height: 50px;
+    }
+  }
+  
+/* mobile screen size---------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------ */
+  
+@media screen and (max-width: 500px) {
+    /* header and navigation */
+    .navbar-brand img{
+      width: 120px; 
+      height: 45px;
+    }
+
+    /* title */
+    .title h1{
+        padding: 180px 0px 50px;
+        font-size: 1.3em;
+    }
+
+    /* project section */
+    .project-image img{
+        width: 250px;
+        height: 280px;
+    }
+
+    /* back to life link */
+    .back-container h1 a{
+        font-size: 0.29em;
+        padding: 5px;
+    }
 }
