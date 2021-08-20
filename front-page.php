@@ -1,49 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>XuanNi</title>
-        <!-- Meta  -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Responsive Website -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-        <link rel= "stylesheet" href= "style.css">
-        <!-- Fade In Animation -->
-        <link rel="stylesheet" href="aos-by-red.css">
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    </head>
+<?php
+get_header();
+?>
 
-    <body>
-        <header> 
-          <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="/index.html"><img src="assets/images/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-lg-auto ">
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/life.html">Life</a>
-                </li> 
-              </ul>
-            </div>
-        </nav>
-        </header>
-
-        <main>
+<main>
             <section class="hero">
               <div class="hero-container" width="normal">
                 <div class="hero-row">
                   <div class="hero-col" width="auto">
                     <div class="hero-image">
-                      <img src="assets/images/x.png">
+                      <img src="/images/x.png">
                     </div>
                   </div>
                 </div>
@@ -74,7 +39,7 @@
 
                   <div class="intro-col" width="auto" id="animation">
                     <div class="intro-animation" data-aos="fade-up" >
-                      <img class="intro-animation-image" src="assets/images/x.png" alt="logo"/>
+                      <img class="intro-animation-image" src="/images/x.png" alt="logo"/>
                     </div>
                   </div>
 
@@ -142,20 +107,6 @@
             </section>
         </main>
 
-      <!-- Animation On Scroll -->
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          duration: 3000,
-          once: false,
-        });
-      </script>
-
-      <script src="assets/js/main.js"></script> 
-
-      <!-- Navigation -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
-</html>
+<?php
+get_footer();
+?>

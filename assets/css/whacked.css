@@ -123,34 +123,18 @@ header{
     font-weight: 600;
 }
 
-.insights-text-1, .insights-text-2{
+.insights-text-1{
     font-size: 1em;
     padding-bottom: 30px;
 }
 
-.insights-image{
-    display: block;
-    width: 100%;
-    padding-bottom: 30px;
-}
-
-.insights-image img{
-    display: block;
-    border: 1px solid black;
-    margin: auto;
-    margin-bottom: 30px;
-    width: 600px;
-    height: 350px;
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
-}
-
 /* tech stack section */
-.tech{
+.projects{
     margin: auto;
     padding: 50px 100px;
 }
 
-.tech-container{
+.projects-container{
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -161,25 +145,37 @@ header{
     text-align: left;
 }
 
-.tech-title h1{
+.projects-title h1{
     padding: 0px 0px 30px 0px;
     font-size: 2em;
     font-weight: 600;
 }
 
-.tech-text{
+.projects-text{
     font-size: 1em;
     padding-bottom: 20px;
 }
 
-.tech-text span{
+.projects-text span{
     font-weight: 700;
 }
 
-.tech-text li{
+.projects-text a, .projects-text a:hover{
+   text-decoration: none;
+   color: blue;
+}
+
+.projects-text li{
     line-height: 1.8;
     padding: 15px 0px;
+    font-size: 1.5em;
 }
+
+.projects-text p{
+    line-height: 1.8;
+    padding: 10px 0px;
+}
+
 
 /* link back to home */
 .back{
@@ -279,28 +275,19 @@ header{
         max-width: 550px;
     }
 
-    .insights-text-1, .insights-text-2{
+    .insights-text-1{
         padding-bottom: 20px;
     }
 
-    .insights-image{
-        padding: 10px 0px;
-    }
-    
-    .insights-image img{
-        width: 100%;
-        height: auto;
-    }
-
-    .tech{        
+    .projects{        
         padding: 50px 50px;
     }
     
-    .tech-container{
+    .projects-container{
         max-width: 550px;
     }
     
-    .tech-text li{
+    .projects-text li{
         line-height: 1.5;
         padding: 15px 0px;
     }
@@ -354,21 +341,21 @@ header{
         max-width: 600px;
     }
 
-    .insights-text-1, .insights-text-2{
+    .insights-text-1{
         font-size: 0.85em;
         padding-bottom: 0px;
     }
 
-    .tech{        
+    .projects{        
         padding: 30px;
         padding-top: 60px;
     }
     
-    .tech-container{
+    .projects-container{
         max-width: 600px;
     }
 
-    .tech-text{
+    .projects-text{
         font-size: 0.85em;
     }
 

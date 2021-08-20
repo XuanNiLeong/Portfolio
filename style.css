@@ -217,7 +217,7 @@ header{
 }
 
 .work-container{
-  background-image: url('/images/work.jpg');
+  background-image: url('assets/images/work.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -249,7 +249,7 @@ header{
 }
 
 .life-container{
-  background-image: url('/images/life.jpg');
+  background-image: url('assets/images/life.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
