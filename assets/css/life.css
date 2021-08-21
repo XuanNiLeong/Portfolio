@@ -212,7 +212,15 @@ header{
         font-size: 1.3em;
     }
 
-    /* project section */
+    /* life section */
+    .life-col{
+        min-width: 0;
+    }
+    
+    #explorer, #foodie, #development{ 
+        min-width: 0;
+    }
+
     .life-image img{
         width: 250px;
         height: 280px;

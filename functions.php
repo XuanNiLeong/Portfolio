@@ -25,11 +25,12 @@ function portfolio_register_scripts(){
     wp_enqueue_script( 'portfolio-jquery', "https://code.jquery.com/jquery-3.2.1.slim.min.js", array(), '1.0', 'true');
     wp_enqueue_script( 'portfolio-cloudflare', "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js", array(), '1.0', 'true');
     wp_enqueue_script( 'portfolio-boostrap', "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js", array(), '1.0', 'true');
+    wp_enqueue_script( 'portfolio-aos', "https://unpkg.com/aos@next/dist/aos.js", array(), '1.0', 'true');
     wp_enqueue_script( 'portfolio-js', get_template_directory_uri() ."/assets/js/main.js", array(), '1.0', 'true');
-
 
 }
 
 add_action('wp_enqueue_scripts', 'portfolio_register_scripts');
+
 
 ?>

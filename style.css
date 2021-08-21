@@ -217,7 +217,7 @@ header{
 }
 
 .work-container{
-  background-image: url('assets/images/work.jpg');
+  background-image: url('/wp-content/themes/XN/assets/images/work.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -249,7 +249,7 @@ header{
 }
 
 .life-container{
-  background-image: url('assets/images/life.jpg');
+  background-image: url('/wp-content/themes/XN/assets/images/life.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -427,6 +427,11 @@ header{
 
   .intro-col{
     min-width: 200px;
+  }
+
+  .intro-text{
+    margin: auto;
+    padding: 0;
   }
 
   .intro-text h1{

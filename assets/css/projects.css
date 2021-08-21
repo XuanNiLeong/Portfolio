@@ -207,6 +207,14 @@ header{
     }
 
     /* project section */
+    .projects-col{
+        min-width: 0;
+    }
+
+    #data, #software, #consulting, #whacked, #portfolio{
+        min-width: 0;
+    }
+
     .project-image img{
         width: 250px;
         height: 280px;
