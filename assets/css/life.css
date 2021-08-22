@@ -216,10 +216,6 @@ header{
     .life-col{
         min-width: 0;
     }
-    
-    #explorer, #foodie, #development{ 
-        min-width: 0;
-    }
 
     .life-image img{
         width: 250px;
@@ -232,6 +228,10 @@ header{
     
     .life-text p{
       font-size: 0.8em;
+    }
+
+    #explorer, #foodie, #development{ 
+        min-width: 0;
     }
 
     /* back to life link */

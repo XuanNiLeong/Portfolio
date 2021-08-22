@@ -76,7 +76,7 @@ header{
 }
 
 .description-image img{
-    object-fit: cover;
+    object-fit: contain;
 }
   
 .description-text{
@@ -142,7 +142,7 @@ header{
     width: 600px;
     height: 350px;
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.34);
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .insights-text-1 span, .insights-text-2 span{
@@ -259,7 +259,7 @@ header{
     .description-image img{
         width: 100%;
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
     } 
       
     .description-text{
@@ -295,6 +295,7 @@ header{
     .insights-image-1 img, .insights-image-2 img{
         width: 100%;
         height: auto;
+        object-fit: contain;
     }
 
     .tech, .others{        
@@ -336,6 +337,12 @@ header{
         margin: auto;
         padding: 180px 30px 10px;
     }
+
+    .description-image img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    } 
       
     .description-text{
         padding-left: 0px;
@@ -357,6 +364,12 @@ header{
 
     .insights-container{
         max-width: 600px;
+    }
+
+    .insights-image-1 img, .insights-image-2 img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .insights-text-1, .insights-text-2, .insights-text-3{
