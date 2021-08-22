@@ -62,6 +62,10 @@ header{
     width: 80%;
 }
 
+.hero-col{
+  padding: 50px 0px;
+}
+
 /* gallery section */
 .gallery {
   margin: auto;
@@ -371,6 +375,10 @@ header{
     width: 50%;
   }
 
+  .hero-col{
+    padding: 30px 0px;
+  }
+
   /* gallery section */
   .gallery {
     margin: auto;
@@ -523,6 +531,10 @@ header{
 
   .hero-container img{
     width: 35%;
+  }
+
+  .hero-col{
+    padding: 10px 0px;
   }
 
   /* gallery section */
